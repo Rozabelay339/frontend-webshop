@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* no colors or theme specific rules here */
+:root {
+    --font-family: "Inter", monospace;
+    --font-size: 15px;
+}
+
+:root[data-theme="light"] {
+    --bg-color: #ededed;
+    --text-color: #515151;
+}
+
+:root[data-theme="dark"] {
+}
+
+/* opt-in transition only while toggling to avoid animating on page load */
+:root.theme-animating,
+:root.theme-animating * {
+    transition:
+        background-color 250ms ease,
+        color 250ms ease,
+        border-color 250ms ease,
+        fill 250ms ease,
+        stroke 250ms ease;
+}
+
+/* accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    :root.theme-animating,
+    :root.theme-animating * {
+        transition: none !important;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, b{
+    color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 15px;
+    border-radius: 6px !important;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 10px 20px;
+    border-radius: 6px !important;
+}
+
+.errorBox {
+    background-color: #E43636;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+}
+
+/*-----Contact Page-----*/
+
+.contact-content {
+    max-width: 900px;
+    margin: 3rem auto 5rem;
+    padding: 0 1rem;
+}
+
+.contact-content h1 {
+    font-family: "Unbounded", var(--font-family);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin: 0 0 1rem;
+}

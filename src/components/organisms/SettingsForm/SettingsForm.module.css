@@ -1,0 +1,99 @@
+
+.settingsPage {
+  max-width: 50%;
+}
+
+.settingsPage h1 {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.form {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+
+}
+
+.form button {
+  max-width: 280px;
+}
+
+.form input {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.form input::placeholder {
+  color: #6b7280;
+}
+
+.form input:focus-visible {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+.form input:disabled {
+  background: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.form input:invalid {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.14);
+}
+.form input:valid {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.settingsPage h2 {
+}
+
+.settingsPage p {
+  margin-top: 0;
+}
+
+.deleteAccountSection {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.deleteAccountSection p {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.deleteAccountSection button {
+  margin-top: 12px;
+  width: auto;
+  display: inline-flex;
+}
+
+.logoutSection {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.help {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+}

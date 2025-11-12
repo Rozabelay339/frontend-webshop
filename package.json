@@ -1,5 +1,5 @@
 {
-  "name": "frontend-webshop",
+  "name": "wai-projektarbete-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,12 +8,19 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 -p 6006 --https --ssl-cert ./localhost+2.pem --ssl-key ./localhost+2-key.pem",
+    "build-storybook": "storybook build",
+    "test-storybook": "vitest --project=storybook"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^9.0.8",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-cookie": "^8.0.1",
+    "react-dom": "^19.1.1",
+    "react-google-recaptcha-v3": "^1.11.0",
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
@@ -36,19 +43,7 @@
     "prop-types": "^15.8.1",
     "storybook": "^9.1.10",
     "vite": "^7.1.7",
+    "vite-plugin-svgr": "^4.5.0",
     "vitest": "^3.2.4"
-  },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rozabelay339/frontend-webshop.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rozabelay339/frontend-webshop/issues"
-  },
-  "homepage": "https://github.com/Rozabelay339/frontend-webshop#readme"
+  }
 }

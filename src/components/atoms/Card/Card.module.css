@@ -1,0 +1,20 @@
+.CardContainer {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* låt det vara samma padding på alla storlekar */
+.small {
+  padding: 10px;
+}
+
+.medium {
+  padding: 10px;
+}
+
+.big {
+  padding: 10px;
+}

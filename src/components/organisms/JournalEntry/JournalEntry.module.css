@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.page {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+}

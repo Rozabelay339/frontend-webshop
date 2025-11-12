@@ -1,0 +1,32 @@
+.body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+  font-weight: 400;
+}
+
+.heading {
+  font-weight: bold;
+  color: #000;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #111;
+}
+
+.caption {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.muted {
+  color: #999;
+}

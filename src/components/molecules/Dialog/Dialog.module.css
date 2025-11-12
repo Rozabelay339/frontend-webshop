@@ -1,0 +1,104 @@
+.Overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Dialog {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+.Header {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: -10px -10px 0 -10px;
+  padding: 5px;
+  align-items: center;
+}
+
+.Header button {
+  justify-self: end;
+  color: currentColor;
+  padding: 15px !important;
+}
+
+.dialogTitle {
+  margin-top: 0;
+}
+
+.Body {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Body input[type="password"] {
+  margin-top: 10px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.Footer :where(button, a[role="button"]) {
+  flex: 1; 
+  min-width: 0;
+}
+
+.Body input,
+.Body textarea,
+.Body select {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.Body input::placeholder,
+.Body textarea::placeholder {
+  color: #6b7280;
+}
+
+/* Focus ring — crisp and accessible */
+.Body input:focus-visible,
+.Body textarea:focus-visible,
+.Body select:focus-visible {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+/* Disabled state */
+.Body input:disabled,
+.Body textarea:disabled,
+.Body select:disabled {
+  background: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Native validation feedback without extra HTML */
+.Body input:invalid,
+.Body textarea:invalid,
+.Body select:invalid {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.14);
+}
+.Body input:valid,
+.Body textarea:valid,
+.Body select:valid {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.Body :where(input, button) {
+  width: 100%;
+  box-sizing: border-box;
+}

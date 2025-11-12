@@ -1,0 +1,54 @@
+.GuestLayout {
+  display: flex;
+  justify-content: row;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.06), rgba(0,0,0,0.4) 70%),
+                    linear-gradient(to right, #0a0c15 0%, #141624 50%, #141624 50%);
+  background-attachment: fixed;
+}
+
+.hero {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #b9b9b9;
+  text-align: center;
+}
+
+.svgWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 0 0 50px;
+  padding: 0;
+  max-width: 50%;
+  text-align: center;
+}
+
+.hero svg {
+  margin-bottom: -200px;
+}
+
+.hero .introText {
+  text-align: center;
+}
+
+.main {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  border-radius: 60px 0 0 60px;
+  padding: 60px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

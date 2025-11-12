@@ -1,0 +1,58 @@
+.terms_card {
+  width: 100%;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.terms_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.category {
+  margin: 6px 0;
+  padding: 8px 0;
+}
+
+.terms_text h2 {
+  font-weight: bold;
+}
+
+.terms_text p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+.meta {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metaItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.metaValue {
+  font-weight: 500;
+}
+
+.terms_card button {
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 22px;
+}
+
+.loading {
+  padding: 14px;
+  text-align: center;
+}

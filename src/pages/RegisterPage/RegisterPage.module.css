@@ -1,0 +1,11 @@
+.RegisterContainer {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.RegisterContainer h1 {
+    margin-top: 0;
+}
